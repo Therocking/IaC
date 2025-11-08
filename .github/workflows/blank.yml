@@ -14,5 +14,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Show repository files
+        run: ls .
+
       - name: OS-Release notes
         run: cat /etc/os-release
